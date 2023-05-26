@@ -198,8 +198,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="15dp"
-                    android:text="Anda dinyatakan tidak diterima di"
-                    android:textColor="@color/merah"
+                    android:text="Anda dinyatakan diterima di"
+                    android:textColor="@color/hijau2"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -230,7 +230,7 @@
                 <ImageView
                     android:layout_width="70dp"
                     android:layout_height="40dp"
-                    android:layout_marginStart="35dp"
+                    android:layout_marginStart="65dp"
                     android:src="@drawable/detail3"
                     app:layout_constraintBottom_toBottomOf="@+id/textView5"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -471,38 +471,51 @@
             tools:layout_editor_absoluteX="10dp">
 
             <ImageView
+                android:id="@+id/imageView14"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
                 android:src="@drawable/frame6"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="16dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/textView14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="Berita Terkait PPDB"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="64dp" />
+                app:layout_constraintEnd_toEndOf="@+id/imageView14"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView14"
+                app:layout_constraintTop_toBottomOf="@+id/imageView14" />
 
             <TextView
+                android:id="@+id/textView15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:text="Dapatkan semua informasi terbaru dan terpopuler terkait\nPPDB"
                 android:textColor="@color/black"
                 android:textSize="14sp"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="108dp" />
+                app:layout_constraintEnd_toEndOf="@+id/textView14"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout6"
                 android:layout_width="350dp"
                 android:layout_height="60dp"
+                android:layout_marginTop="35dp"
                 android:background="@drawable/layoutabu"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="165dp">
+                app:layout_constraintEnd_toEndOf="@+id/textView15"
+                app:layout_constraintStart_toStartOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/textView15">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -517,6 +530,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton"
                 android:layout_width="175dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="5dp"
@@ -531,224 +545,281 @@
                 app:layout_constraintTop_toTopOf="@+id/constraintLayout6" />
 
             <ImageView
+                android:id="@+id/imageView15"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_marginTop="30dp"
                 android:src="@drawable/fotobg"
-                tools:layout_editor_absoluteX="21dp"
-                tools:layout_editor_absoluteY="261dp" />
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout6"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout6"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
 
             <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="PPDB SMA/ SMK 2022, Ridwan\nKamil: PPDB di Jawa Barat..."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+                app:layout_constraintStart_toEndOf="@+id/imageView15"
+                app:layout_constraintTop_toTopOf="@+id/imageView15"
+                app:layout_constraintVertical_bias="0.13999999" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Pendidikan"
+                android:textColor="@color/abuabu"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView17"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView17"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="15 Jam Lalu"
+                android:textColor="@color/abuabu"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView16"
+                app:layout_constraintStart_toEndOf="@+id/textView16"
+                app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:rotation="180"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+                app:layout_constraintStart_toEndOf="@+id/textView17"
+                app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+            <TextView
+                android:id="@+id/textView19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="PPDB SMA/ SMK 2022, Ridwan\nKamil: PPDB di Jawa Barat..."
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                tools:layout_editor_absoluteX="121dp"
-                tools:layout_editor_absoluteY="273dp" />
+                app:layout_constraintEnd_toEndOf="@+id/textView17"
+                app:layout_constraintStart_toStartOf="@+id/textView17"
+                app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/fotobg"
+                app:layout_constraintEnd_toEndOf="@+id/imageView15"
+                app:layout_constraintStart_toStartOf="@+id/imageView15"
+                app:layout_constraintTop_toBottomOf="@+id/imageView15" />
 
             <TextView
+                android:id="@+id/textView21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pendidikan"
-                android:textColor="@color/abuabu"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="121dp"
-                tools:layout_editor_absoluteY="320dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
                 android:text="15 Jam Lalu"
                 android:textColor="@color/abuabu"
                 android:textSize="12sp"
-                tools:layout_editor_absoluteX="196dp"
-                tools:layout_editor_absoluteY="320dp" />
+                app:layout_constraintStart_toEndOf="@+id/textView20"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
             <ImageView
+                android:id="@+id/imageView20"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:rotation="180"
                 android:src="@drawable/baseline_arrow_back_ios_24"
-                tools:layout_editor_absoluteX="354dp"
-                tools:layout_editor_absoluteY="283dp" />
+                app:layout_constraintBottom_toBottomOf="@+id/imageView17"
+                app:layout_constraintStart_toStartOf="@+id/imageView16"
+                app:layout_constraintTop_toTopOf="@+id/imageView17" />
 
             <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Pendidikan"
+                android:textColor="@color/abuabu"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView19"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="PPDB SMA/ SMK 2022, Ridwan\nKamil: PPDB di Jawa Barat..."
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                tools:layout_editor_absoluteX="121dp"
-                tools:layout_editor_absoluteY="382dp" />
+                app:layout_constraintStart_toStartOf="@+id/textView19"
+                app:layout_constraintTop_toTopOf="@+id/imageView18" />
 
             <ImageView
+                android:id="@+id/imageView18"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_marginTop="30dp"
                 android:src="@drawable/fotobg"
-                tools:layout_editor_absoluteX="21dp"
-                tools:layout_editor_absoluteY="370dp" />
+                app:layout_constraintEnd_toEndOf="@+id/imageView17"
+                app:layout_constraintStart_toStartOf="@+id/imageView17"
+                app:layout_constraintTop_toBottomOf="@+id/imageView17" />
 
             <TextView
+                android:id="@+id/textView26"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="15 Jam Lalu"
                 android:textColor="@color/abuabu"
                 android:textSize="12sp"
-                tools:layout_editor_absoluteX="196dp"
-                tools:layout_editor_absoluteY="429dp" />
+                app:layout_constraintStart_toStartOf="@+id/textView21"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
             <ImageView
+                android:id="@+id/imageView22"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:rotation="180"
                 android:src="@drawable/baseline_arrow_back_ios_24"
-                tools:layout_editor_absoluteX="354dp"
-                tools:layout_editor_absoluteY="392dp" />
+                app:layout_constraintBottom_toTopOf="@+id/imageView19"
+                app:layout_constraintStart_toStartOf="@+id/imageView20"
+                app:layout_constraintTop_toTopOf="@+id/imageView18" />
 
             <TextView
+                android:id="@+id/textView24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="Pendidikan"
                 android:textColor="@color/abuabu"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                tools:layout_editor_absoluteX="121dp"
-                tools:layout_editor_absoluteY="429dp" />
+                app:layout_constraintStart_toStartOf="@+id/textView20"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/fotobg"
+                app:layout_constraintEnd_toEndOf="@+id/imageView18"
+                app:layout_constraintStart_toStartOf="@+id/imageView18"
+                app:layout_constraintTop_toBottomOf="@+id/imageView18" />
 
             <TextView
+                android:id="@+id/textView25"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="PPDB SMA/ SMK 2022, Ridwan\nKamil: PPDB di Jawa Barat..."
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                tools:layout_editor_absoluteX="125dp"
-                tools:layout_editor_absoluteY="494dp" />
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/fotobg"
-                tools:layout_editor_absoluteX="25dp"
-                tools:layout_editor_absoluteY="483dp" />
+                app:layout_constraintStart_toStartOf="@+id/textView22"
+                app:layout_constraintTop_toTopOf="@+id/imageView19" />
 
             <TextView
+                android:id="@+id/textView23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Pendidikan"
+                android:textColor="@color/abuabu"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView24"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="15 Jam Lalu"
                 android:textColor="@color/abuabu"
                 android:textSize="12sp"
-                tools:layout_editor_absoluteX="200dp"
-                tools:layout_editor_absoluteY="542dp" />
+                app:layout_constraintStart_toStartOf="@+id/textView26"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:rotation="180"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                app:layout_constraintBottom_toTopOf="@+id/imageView21"
+                app:layout_constraintStart_toStartOf="@+id/imageView22"
+                app:layout_constraintTop_toTopOf="@+id/imageView19" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/fotobg"
+                app:layout_constraintStart_toStartOf="@+id/imageView19"
+                app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Pendidikan"
+                android:textColor="@color/abuabu"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView29"
+                app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="15 Jam Lalu"
+                android:textColor="@color/abuabu"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textView27"
+                app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:rotation="180"
                 android:src="@drawable/baseline_arrow_back_ios_24"
-                tools:layout_editor_absoluteX="358dp"
-                tools:layout_editor_absoluteY="504dp" />
+                app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+                app:layout_constraintStart_toStartOf="@+id/imageView23"
+                app:layout_constraintTop_toTopOf="@+id/imageView21" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pendidikan"
-                android:textColor="@color/abuabu"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="125dp"
-                tools:layout_editor_absoluteY="542dp" />
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/fotobg"
-                tools:layout_editor_absoluteX="21dp"
-                tools:layout_editor_absoluteY="606dp" />
-
-            <TextView
+                android:id="@+id/textView29"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="PPDB SMA/ SMK 2022, Ridwan\nKamil: PPDB di Jawa Barat..."
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                tools:layout_editor_absoluteX="121dp"
-                tools:layout_editor_absoluteY="618dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pendidikan"
-                android:textColor="@color/abuabu"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="121dp"
-                tools:layout_editor_absoluteY="665dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="15 Jam Lalu"
-                android:textColor="@color/abuabu"
-                android:textSize="12sp"
-                tools:layout_editor_absoluteX="196dp"
-                tools:layout_editor_absoluteY="665dp" />
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:rotation="180"
-                android:src="@drawable/baseline_arrow_back_ios_24"
-                tools:layout_editor_absoluteX="354dp"
-                tools:layout_editor_absoluteY="628dp" />
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/fotobg"
-                tools:layout_editor_absoluteX="21dp"
-                tools:layout_editor_absoluteY="729dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pendidikan"
-                android:textColor="@color/abuabu"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="121dp"
-                tools:layout_editor_absoluteY="788dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="15 Jam Lalu"
-                android:textColor="@color/abuabu"
-                android:textSize="12sp"
-                tools:layout_editor_absoluteX="196dp"
-                tools:layout_editor_absoluteY="788dp" />
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:rotation="180"
-                android:src="@drawable/baseline_arrow_back_ios_24"
-                tools:layout_editor_absoluteX="354dp"
-                tools:layout_editor_absoluteY="751dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="PPDB SMA/ SMK 2022, Ridwan\nKamil: PPDB di Jawa Barat..."
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="121dp"
-                tools:layout_editor_absoluteY="741dp" />
+                app:layout_constraintStart_toStartOf="@+id/textView25"
+                app:layout_constraintTop_toTopOf="@+id/imageView21" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
